@@ -228,7 +228,7 @@ EXTERN  volatile irparams_t  irparams;
 	TCCR2A               = _BV(WGM20); \
 	TCCR2B               = _BV(WGM22) | _BV(CS20); \
 	OCR2A                = pwmval; \
-	OCR2B                = pwmval / 3; \
+	OCR2B                = pwmval / 2; \
 })
 
 #define TIMER_COUNT_TOP  (SYSCLOCK * USECPERTICK / 1000000)
