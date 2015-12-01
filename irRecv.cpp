@@ -80,6 +80,11 @@ int  IRrecv::decode (decode_results *results)
 	if (decodeDenon(results))  return true ;
 #endif
 
+#if DECODE_LIGHTSTRIKE
+	DBG_PRINTLN("Attempting Light Strike decode");
+	if (decodeLightStrike(results))  return true;
+#endif
+
 	// decodeHash returns a hash on any input.
 	// Thus, it needs to be last in the list.
 	// If you add any decodes, add them before this.
