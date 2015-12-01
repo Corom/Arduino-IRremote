@@ -76,8 +76,8 @@
 #define DECODE_PRONTO        0 // This function doe not logically make sense
 #define SEND_PRONTO          0
 
-#define DECODE_LIGHTSTRIKE			 1 // This function doe not logically make sense
-#define SEND_LIGHTSTRIKE				 1
+#define DECODE_LIGHTSTRIKE			 1
+#define SEND_LIGHTSTRIKE			 1
 
 //------------------------------------------------------------------------------
 // When sending a Pronto code we request to send either the "once" code
